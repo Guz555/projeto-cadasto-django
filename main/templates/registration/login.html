@@ -1,10 +1,10 @@
 {% extends 'main/base.html' %}
-{% block content%}
+{% block content %}
 
 <form method="post">
-    {%csfr_token%}
+    {% csrf_token %}
     {{ form.as_p }}
     <input type="submit" value="ok">
 </form>
 
-{% endblock %}
+{% endblock content %}

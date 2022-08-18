@@ -13,6 +13,7 @@ class ListaPessoaView(ListView):
 
     def get_queryset(self):
         queryset = super().get_queryset()
+        queryset = queryset.filter(usuario=self.request.user)
         filtro_nome = self.request.GET.get('nome') or None
 
         if filtro_nome:
