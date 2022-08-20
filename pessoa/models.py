@@ -1,4 +1,3 @@
-from operator import mod
 from pyexpat import model
 from tkinter import CASCADE
 from django.db import models

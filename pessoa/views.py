@@ -11,7 +11,7 @@ class ListaPessoaView(ListView):
     model = Pessoa
     queryset = Pessoa.objects.all().order_by('nome_completo')
 
-    def get_queryset(self):
+    """def get_queryset(self):
         queryset = super().get_queryset()
         queryset = queryset.filter(usuario=self.request.user)
         filtro_nome = self.request.GET.get('nome') or None
@@ -19,7 +19,7 @@ class ListaPessoaView(ListView):
         if filtro_nome:
             queryset = queryset.filter(nome_completo__contains=filtro_nome)
 
-        return queryset
+        return queryset"""
 
 
 class PessoaCreateView(CreateView):

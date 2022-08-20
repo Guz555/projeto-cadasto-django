@@ -1,0 +1,112 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 60px;
+}
+
+ul li {
+    display: inline;
+    padding: 20px;
+}
+
+a {
+    text-transform: uppercase;
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+a:visited {
+    color: inherit;
+}
+
+
+body {
+    background-color: black;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+div.login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+
+.login {
+    display: flex;
+    justify-content: center;
+}
+
+.login input {
+    margin: 10px;
+    height: 30px;
+    background: none;
+    border: none;
+    color: white;
+    border-bottom: 1px solid lime;
+}
+
+
+input.btn {
+    background-color: lime;
+    border-radius: 25px;
+    width: 100px;
+    color: black;
+}
+
+input.btn:hover {
+    cursor: pointer;
+}
+
+.busca {
+    display: flex;
+    justify-content: center;
+}
+
+.busca input {
+    margin: 20px;
+    border-radius: 10px;
+}
+
+.busca #submit {
+    background-color: lime;
+    padding: 10px;
+}
+
+
+th {
+    color: lime;
+    padding: 20px;
+}
+
+th,
+td {
+    text-align: left;
+    padding: 8px;
+    border: 1px solid white;
+}
+
+td a {
+    font-size: 15px;
+    margin-right: 10px;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+}
+
+.tab {
+    overflow-x: auto;
+}
