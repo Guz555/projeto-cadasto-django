@@ -13,7 +13,7 @@
                 <th>Nome</th>
                 <th>Data Nascimento</th>
                 <th>Ativo</th>
-                <th>Ações</th>
+                <th colspan="3">Ações</th>
             </tr>
         </thead>
         <tbody>
@@ -23,9 +23,9 @@
                 <td>{{pessoa.data_nascimento |date:"d/m/Y" }}</td>
                 <td>
                     {% if pessoa.ativa %}
-                    Sim
+                    Sim ✔️
                     {% else %}
-                    Não
+                    Não ❌
                     {% endif %}
                 </td>
                 <td><a href="{%url 'pessoa.editar' pessoa.pk %}">Editar</a></td>

@@ -1,8 +1,10 @@
 {% extends 'main/base.html' %}
 {% block content%}
-<form method="post">
-    {% csrf_token %}
-    {{form.as_p }}
-    <input type="submit" value="Salvar"></input>
-</form>
+<div class="novo">
+    <form method="post">
+        {% csrf_token %}
+        {{form.as_p }}
+        <input class="btn" type="submit" value="Salvar"></input>
+    </form>
+</div>
 {% endblock%}

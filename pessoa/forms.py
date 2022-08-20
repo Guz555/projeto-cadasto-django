@@ -5,11 +5,11 @@ from .models import Pessoa, Contato
 
 
 class PessoaForm(forms.ModelForm):
-    """data_nascimento = forms.DateField(
+    data_nascimento = forms.DateField(
         widget=forms.TextInput(
             attrs={"type": "date"}
         )
-    )"""
+    )
 
     class Meta:
         model = Pessoa

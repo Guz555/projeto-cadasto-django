@@ -81,6 +81,7 @@ input.btn:hover {
 .busca #submit {
     background-color: lime;
     padding: 10px;
+
 }
 
 
@@ -91,6 +92,7 @@ th {
 
 th,
 td {
+
     text-align: left;
     padding: 8px;
     border: 1px solid white;
@@ -109,4 +111,19 @@ table {
 
 .tab {
     overflow-x: auto;
+}
+
+.novo {
+    display: flex;
+    justify-content: center;
+}
+
+.novo input {
+    margin: 10px;
+}
+
+.novo .btn {
+    background-color: lime;
+    padding: 10px;
+    border-radius: 10px;
 }
